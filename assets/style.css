@@ -1,0 +1,431 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --main-index-color: #e5edeb;
+  --main-login-btn-color: #99d6ed;
+  --main-register-btn-color: #c6ed99;
+  --register-bg-color: #c2f0f7;
+  --register-tbl-kembali-color: #fdd7ac;
+  --register-tbl-register-color: #adf59f;
+  --main-login-bg-color: #fbfdac;
+  --main-login-focus-color: #ace6fd;
+  --main-login-login-btn: #adf59f;
+  --main-login-kembali-btn: #fdd7ac;
+  --main-home-profile-header-color: #f9ffca;
+  --main-home-profile-body-color: #cad1ff;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* index */
+.container-index {
+  background-color: var(--main-index-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.header-index {
+  height: 10vh;
+  width: 100vw;
+}
+
+.header-index p {
+  padding: 20px;
+}
+
+.main-text {
+  padding-top: 50px;
+}
+
+.main-text p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.tombol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 50px 0 50px;
+  margin-top: 50px;
+}
+
+.tbl-login {
+  background-color: var(--main-login-btn-color);
+  color: black;
+  width: 100px;
+  height: 60px;
+  border: none;
+}
+
+.tbl-login a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.tbl-register {
+  background-color: var(--main-register-btn-color);
+  color: black;
+  width: 100px;
+  height: 60px;
+  border: none;
+}
+
+.tbl-register a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* register */
+.container-register {
+  background-color: var(--register-bg-color);
+  margin: 0;
+  padding: 10px;
+  height: 100vh;
+}
+
+.header-register {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-register p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.main-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-part {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+.part-1 {
+  /* background-color: var(--main-index-color); */
+  width: 33vw;
+  height: 33vh;
+}
+
+.part-2 {
+  /* background-color: var(--main-login-btn-color); */
+  width: 33vw;
+  height: 33vh;
+}
+
+.part-3 {
+  /* background-color: var(--main-register-btn-color); */
+  width: 33vw;
+  height: 33vh;
+}
+
+.data-part {
+  margin: 10px;
+}
+
+.button-form {
+  /* background-color: var(--register-tbl-register-color); */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px;
+  margin-right: 150px;
+}
+
+.btn-kembali-register {
+  background-color: var(--register-tbl-kembali-color);
+  color: black;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border-style: solid black;
+  box-shadow: 2px 2px 6px black;
+}
+
+.btn-kembali-register a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-kembali-register-profile {
+  background-color: var(--register-tbl-kembali-color);
+  color: black;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border-style: solid black;
+  box-shadow: 2px 2px 6px black;
+  align-self: center;
+}
+
+.btn-kembali-register-profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-register-register {
+  background-color: var(--register-tbl-register-color);
+  color: black;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  border-style: solid black;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 50px;
+  box-shadow: 2px 2px 6px black;
+}
+
+/* login */
+.container-login {
+  background-color: var(--main-login-bg-color);
+  margin: 0;
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-login {
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+}
+
+.header-login p {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-login {
+  background-color: var(--main-login-focus-color);
+  width: 500px;
+  height: fit-content;
+  align-self: center;
+  padding: 30px;
+}
+
+.main-login-form {
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+}
+
+.login-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-login {
+  width: 300px;
+  height: 30px;
+  display: table-row;
+}
+
+.user-login label {
+  display: table-cell;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.user-login input {
+  display: table-cell;
+}
+
+.pass-login {
+  width: 300px;
+  height: 30px;
+  display: table-row;
+}
+
+.pass-login label {
+  display: table-cell;
+  text-align: right;
+  padding-right: 55px;
+}
+
+.pass-login input {
+  display: table-cell;
+}
+
+/* TOMBOL LOGIN KEMBALI PADA LOGIN.PHP*/
+
+.login-button {
+  margin-left: 50px;
+}
+
+.login-button-btn {
+  background-color: var(--main-login-login-btn);
+  color: black;
+  width: 60px;
+  height: 25px;
+  border: none;
+  margin-left: 35px;
+  margin-right: 7px;
+}
+
+.login-button-btn p {
+  align-self: center;
+}
+
+.kembali-button-btn {
+  background-color: var(--main-login-kembali-btn);
+  color: black;
+  width: 60px;
+  height: 25px;
+  border: none;
+}
+
+.kembali-button-btn a {
+  align-self: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* HOME */
+
+.navbar {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--main-home-profile-header-color);
+  margin: 0;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar p {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.nav-home {
+  color: black;
+  margin-right: 80px;
+}
+
+.nav-profile {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logout {
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+}
+
+.container-home {
+  background-color: var(--main-home-profile-body-color);
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container-home p {
+  font-size: 1.5rem;
+  margin-top: -300px;
+}
+
+/* profile, navnya sama kayak yg home */
+
+.nav-home-profile {
+  text-decoration: none;
+  color: black;
+  margin-right: 80px;
+}
+
+.nav-profile-profile {
+  color: black;
+}
+
+.container-profil-profil {
+  background-color: var(--main-home-profile-body-color);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-profil-profil h2 {
+  margin: 30px;
+}
+
+.container-profile-tampilan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+}
+
+.specific-part {
+  margin: 10px auto;
+  align-self: flex-start;
+  text-align: start;
+}
+
+.specific-part-photo {
+  margin: 10px auto;
+  align-self: flex-start;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+}
+
+.part1-profile {
+  margin: 20px;
+}
+
+.part2-profile {
+  margin: 20px;
+}
+
+.part3-profile {
+  margin: 20px;
+  width: 300px;
+}
+
+.part3-profile img {
+  width: 140px;
+  height: 140px;
+  margin-left: 20px;
+}
+
+/* ubah css untuk textarea */
+.data-part-alamat {
+  padding-left: 90px;
+  display: flex;
+  flex-direction: row;
+}
+.data-part-alamat label {
+  margin-right: 10px;
+}
