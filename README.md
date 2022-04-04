@@ -6,4 +6,8 @@
 
 ### Untuk database yang telah terexport bernama dbkeuangan.sql
 
+### Note : Commit terakhir membenarkan blobnya, jadi yang dikirim ke database adalah benar benar file blob yang gambar bukan path aja
+
+### jadi di commit yang terakhir ini mengaktifkan fungsi blob yang bisa membaca image dari database dan bukan hanya menyimpan pathnya saja, selebihnya masih sama
+
 ### Terima kasih

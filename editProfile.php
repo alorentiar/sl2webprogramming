@@ -98,7 +98,7 @@
                     </div>
                     <div class="data-part">
                         <label for="fotoprofil">Foto Profil (hanya ekstensi .jpg dan .png) jika tidak diubah, upload foto yang sama (WAJIB) </label>
-                        <input type="file" name="fotoprofil" accept="image/*" required>
+                        <input type="file" name="fotoprofil" accept="image/*">
                         <br>
                     </div>
                     <div class="data-part">

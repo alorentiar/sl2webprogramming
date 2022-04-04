@@ -159,9 +159,16 @@
                 <div class="specific-part-photo">
                     <p>Foto Profil : </p>
                     <?php
-                        $image = $_SESSION['image'];
-                        echo "<img src='$image' width='50px' height='50px' alt='fotoprofil'>";
+                        $str_query = "SELECT * FROM msnasabah WHERE nik='".$_SESSION['nikSession']."'";
+
+                        $query = mysqli_query($connection, $str_query);
+
+                        $data = mysqli_fetch_array($query);
+
+                        echo "<img src='data:".$data['tipephoto'].";base64,".base64_encode($data['photo'])."' width='50px' height='50px'>";
+                        
                     ?>
+
                 </div>
             </div>
         </div>

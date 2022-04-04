@@ -21,16 +21,16 @@
             <?php
                 // buat ngecek aja datanya masuk apa engga
 
-            //     $str_query = "SELECT * FROM msnasabah";
+                // $str_query = "SELECT * FROM msnasabah";
 
-            //     $query = mysqli_query($connection, $str_query);
+                // $query = mysqli_query($connection, $str_query);
 
-            //     while($data = mysqli_fetch_array($query)){
-            //         echo "<p>Nama : ".$data['namadepan']."</p>";
-            //         $image = $data['photo'];
-            //         echo "<img src='$image' width='50px' height='50px'>";
-            //     }
-            // ?>
+                // while($data = mysqli_fetch_array($query)){
+                //     echo "<p>Nama : ".$data['namadepan']."</p>";
+                //     $image = $data['photo'];
+                //     echo "<img src='data:".$data['tipephoto'].";base64,".base64_encode($data['photo'])."' width='50px' height='50px'>";
+                // }
+            ?>
         </div>
         <div class="tombol">
             <button class="tbl-login"><a href="login.php">Login</a></button>

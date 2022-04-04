@@ -45,18 +45,27 @@
             $_SESSION['password1Session'] = $password1;
             $_SESSION['password2Session'] = $password2;
             //upload ke filedir
-            $folderTujuan = "profilepicture/";
-            $unggahFoto = move_uploaded_file($tempNama, $folderTujuan.$fotoNama);
+            // $folderTujuan = "profilepicture/";
+            // $unggahFoto = move_uploaded_file($tempNama, $folderTujuan.$fotoNama);
+
+            
+            
             //simpan pathnya
             $locfoto = $folderTujuan.$fotoNama;
             $_SESSION['locFotoSession'] = $locfoto;
             $_SESSION['activeSession'] = "aktif";
 
         //     //database
+                if($_FILES){
+                    if(is_uploaded_file($_FILES['fotoprofil']['tmp_name'])){
+                        $dbfoto = addslashes(file_get_contents($_FILES['fotoprofil']['tmp_name']));
+                        $namadbfoto = getImageSize($_FILES['fotoprofil']['tmp_name']);
 
-                $string_query = "INSERT into msnasabah values('".$_POST['namadepan']."','".$_POST['namatengah']."','".$_POST['namabelakang']."','".$_POST['tempatlahir']."','".$_POST['tgllahir']."','".$_POST['nik']."','".$_POST['warganegara']."','".$_POST['email']."','".$_POST['nohp']."','".$_POST['alamat']."','".$_POST['kodepos']."','".$locfoto."','".$_POST['username']."','".$_POST['password1']."')";
+                        $string_query = "INSERT into msnasabah values('".$_POST['namadepan']."','".$_POST['namatengah']."','".$_POST['namabelakang']."','".$_POST['tempatlahir']."','".$_POST['tgllahir']."','".$_POST['nik']."','".$_POST['warganegara']."','".$_POST['email']."','".$_POST['nohp']."','".$_POST['alamat']."','".$_POST['kodepos']."','".$namadbfoto['mime']."','".$dbfoto."','".$_POST['username']."','".$_POST['password1']."')";
 
-                $querysukses = mysqli_query($connection,$string_query);
+                        $querysukses = mysqli_query($connection,$string_query);
+                    }
+                }
 
                 if($querysukses){
                     echo "<script>";
